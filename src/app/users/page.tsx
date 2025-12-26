@@ -18,7 +18,7 @@ const UsersPage: React.FC = () => {
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editForm, setEditForm] = useState({ username: "", email: "" });
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+  const API_URL = process.env.NEXT_PUBLIC_BE_API_URL || "http://localhost:5000";
 
   const fetchUsers = async () => {
     try {
